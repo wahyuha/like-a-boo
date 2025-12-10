@@ -1,4 +1,5 @@
 import { ReactNode } from 'react';
+import TopNav from './TopNav';
 
 interface LayoutProps {
   children: ReactNode;
@@ -8,7 +9,7 @@ interface LayoutProps {
 export default function Layout({ children, rightSidebar }: LayoutProps) {
   return (
     <div className="min-h-screen bg-background text-foreground">
-      TopNav Section
+      <TopNav />
       LeftSidebar Section
 
       {/* Main Content Area */}
