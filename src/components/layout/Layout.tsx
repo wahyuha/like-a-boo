@@ -1,5 +1,6 @@
 import { ReactNode } from 'react';
 import TopNav from './TopNav';
+import LeftSidebar from './LeftSidebar';
 
 interface LayoutProps {
   children: ReactNode;
@@ -10,7 +11,7 @@ export default function Layout({ children, rightSidebar }: LayoutProps) {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <TopNav />
-      LeftSidebar Section
+      <LeftSidebar />
 
       {/* Main Content Area */}
       <div className="pt-16 lg:pl-64">
