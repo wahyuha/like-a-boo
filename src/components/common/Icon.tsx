@@ -15,6 +15,8 @@ export default function Icon({ name, size = 20, className = '' }: IconProps) {
     'heart-outline': '🤍',
     comment: '💬',
     share: '↳',
+    emoji: '😊',
+    send: '➤',
   };
 
   return (
