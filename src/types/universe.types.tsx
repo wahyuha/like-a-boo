@@ -1,4 +1,4 @@
-export interface Universe {
+export interface UniverseModel {
   tag: string;
   souls: string;
 }

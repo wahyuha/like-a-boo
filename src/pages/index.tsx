@@ -2,6 +2,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import Layout from "@/components/layout/Layout";
 import RightSidebar from "@/components/layout/RightSidebar";
 import UniversesPanel from "@/components/universe/UniversesPanel";
+import QuestionCard from "@/components/question/QuestionCard";
+import { questionData } from '@/lib/mockData';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,7 +36,7 @@ export default function Home() {
             </div>
 
             {/* Question Card */}
-            <div>QuestionCard Section</div>
+            <QuestionCard question={questionData} />
 
             {/* Comment Input */}
             <div>CommentInput Section</div>

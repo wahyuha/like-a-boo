@@ -1,6 +1,7 @@
-import { Universe } from "@/types/universe.types";
+import { QuestionModel } from "@/types/question.types";
+import { UniverseModel } from "@/types/universe.types";
 
-export const universes: Universe[] = [
+export const universes: UniverseModel[] = [
   { tag: "#music", souls: "1.3M" },
   { tag: "#movies", souls: "18K" },
   { tag: "#realmadrid", souls: "14K" },
@@ -14,3 +15,16 @@ export const universes: Universe[] = [
   { tag: "#languages", souls: "898" },
   { tag: "#fashion", souls: "742" },
 ];
+
+
+export const questionData: QuestionModel = {
+  id: "dwsQOX",
+  type: "Question of the Day",
+  title: "What would you choose: a relationship full of adventures or a peaceful one?",
+  date: "10/11/2025",
+  stats: {
+    likes: 595,
+    comments: 4076,
+    shares: 12,
+  },
+};

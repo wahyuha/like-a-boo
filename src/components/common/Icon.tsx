@@ -11,6 +11,10 @@ export default function Icon({ name, size = 20, className = '' }: IconProps) {
 		down: '▼',
 		menu: '☰',
 		coins: '●',
+    heart: '❤️',
+    'heart-outline': '🤍',
+    comment: '💬',
+    share: '↳',
   };
 
   return (
