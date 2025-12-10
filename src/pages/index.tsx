@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import Layout from "@/components/layout/Layout";
 import RightSidebar from "@/components/layout/RightSidebar";
+import UniversesPanel from "@/components/universe/UniversesPanel";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -19,7 +20,7 @@ export default function Home() {
         <div className="grid grid-cols-1 lg:grid-cols-[320px_1fr] gap-6">
           {/* Left Panel: Universes (Hidden on mobile) */}
           <div className="hidden lg:block">
-            UniversesPanel Section
+            <UniversesPanel />
           </div>
 
           {/* Main Content */}
@@ -33,13 +34,13 @@ export default function Home() {
             </div>
 
             {/* Question Card */}
-            QuestionCard Section
+            <div>QuestionCard Section</div>
 
             {/* Comment Input */}
-            CommentInput Section
+            <div>CommentInput Section</div>
 
             {/* Comment List */}
-            CommentList Section
+            <div>CommentList Section</div>
           </div>
         </div>
       </Layout>
