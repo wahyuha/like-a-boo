@@ -17,6 +17,7 @@ export default function Icon({ name, size = 20, className = '' }: IconProps) {
     share: '↳',
     emoji: '😊',
     send: '➤',
+    'bookmark-outline': '☆',
   };
 
   return (

@@ -5,6 +5,7 @@ import UniversesPanel from "@/components/universe/UniversesPanel";
 import QuestionCard from "@/components/question/QuestionCard";
 import { questionData } from '@/lib/mockData';
 import CommentInput from "@/components/comment/CommentInput";
+import CommentList from "@/components/comment/CommentList";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -43,7 +44,7 @@ export default function Home() {
             <CommentInput />
 
             {/* Comment List */}
-            <div>CommentList Section</div>
+            <CommentList />
           </div>
         </div>
       </Layout>

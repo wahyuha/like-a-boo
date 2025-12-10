@@ -6,6 +6,7 @@ interface EngagementStatsProps {
   shares: number;
   isLiked?: boolean;
   showCommentButton?: boolean;
+  onLike?: () => void;
 }
 
 export default function EngagementStats({
@@ -14,6 +15,7 @@ export default function EngagementStats({
   shares,
   isLiked = false,
   showCommentButton = false,
+  onLike,
 }: EngagementStatsProps) {
 
   return (
