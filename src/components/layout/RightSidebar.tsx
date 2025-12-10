@@ -1,7 +1,9 @@
+import PurchaseWidget from "../widgets/PurchaseWidget"
+
 export default function RightSidebar() {
   return (
     <div className="space-y-6">
-      <div>BestFriendsWidget Section</div>
+      <PurchaseWidget />
 			<div>RelatedPosts Section</div>
     </div>
   );
