@@ -22,6 +22,7 @@ export default function EngagementStats({
     <div className="flex items-center gap-6 text-muted">
       {/* Likes */}
       <button
+        onClick={onLike}
         className={`flex items-center gap-2 hover:text-foreground ${
           isLiked ? 'text-red-500' : ''}`}
       >

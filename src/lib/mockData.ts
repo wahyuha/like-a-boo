@@ -103,7 +103,7 @@ export const commentsData: Omit<CommentModel, "id">[] = [
   {
     user: mockUsers[3],
     awards: 0,
-    text: "Why not both? Balance is key in any relationship 🌟",
+    text: "Why not both? Balance is key in any relationship",
     timestamp: "3w",
     stats: { likes: 421, comments: 31, shares: 5 },
     replies: [],

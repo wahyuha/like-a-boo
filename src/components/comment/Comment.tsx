@@ -2,16 +2,20 @@ import type { CommentModel } from '@/types/comment.types';
 import Avatar from '@/components/common/Avatar';
 import UserBadge from '@/components/common/UserBadge';
 import EngagementStats from '@/components/engagement/EngagementStats';
-import Icon from '../common/Icon';
-import InlineReplyForm from './InlineReplyForm';
-import { useMemo, useState } from 'react';
+import Icon from '@/components/common/Icon';
+
+import { useState } from 'react';
 
 interface CommentProps {
   comment: CommentModel;
 }
 
 export default function Comment({ comment }: CommentProps) {
-  const isLiked = false;
+  const [isLiked, setIsLiked] = useState(false);
+
+  const handleToggleLike = () => {
+    setIsLiked(!isLiked);
+  };
 
   return (
     <div className={`bg-card rounded-lg p-4 mb-4`}>
@@ -55,6 +59,7 @@ export default function Comment({ comment }: CommentProps) {
           comments={comment.stats.comments}
           shares={comment.stats.shares}
           isLiked={isLiked}
+          onLike={handleToggleLike}
           showCommentButton={true}
         />
 
